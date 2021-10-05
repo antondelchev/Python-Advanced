@@ -12,3 +12,5 @@ for line in file:
             spaces += 1
     print(f"Line {counter}: {line} ({len(line) - punctuation_marks - spaces})({punctuation_marks})")
     counter += 1
+
+file.close()
