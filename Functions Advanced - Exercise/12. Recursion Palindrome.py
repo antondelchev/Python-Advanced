@@ -8,3 +8,4 @@ def palindrome(word, index):
 
 print(palindrome("abcba", 0))
 print(palindrome("peter", 0))
+print(palindrome("rr", 0))
