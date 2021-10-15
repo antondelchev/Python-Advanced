@@ -1,10 +1,9 @@
 def palindrome(word, index):
-    rev_word = word[::-1]
-
-    if rev_word == word:
+    if index == len(word) // 2:
         return f"{word} is a palindrome"
-    else:
+    if not word[index] == word[len(word) - 1 - index]:
         return f"{word} is not a palindrome"
+    return palindrome(word, index + 1)
 
 
 print(palindrome("abcba", 0))
